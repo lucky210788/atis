@@ -1,0 +1,99 @@
+@media (min-width: 1620px) {
+  .container {
+    max-width: 1600px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+  }
+
+  .intro {
+    height: auto;
+  }
+
+  .intro-text {
+    margin: 27vh auto;
+  }
+
+  .search {
+    display: block;
+  }
+
+  .inputs-list {
+    display: none;
+    @include flex-direction(column);
+  }
+
+  .popular-places-list {
+    @include flex-direction(column);
+    @include align-items(center);
+    li {
+      width: 100% !important;
+    }
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .main-nav {
+    .container {
+      @include flex-direction(column);
+    }
+  }
+  .header-head {
+    width: 100%;
+  }
+  .menu-button {
+    display: block;
+  }
+  .nav-list {
+    @include flex-direction(column);
+    @include align-items(center);
+    padding-bottom: 25px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 155px;
+    background: rgba(255,255,255, .9);
+    z-index: 100;
+  }
+  .nav-button {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
